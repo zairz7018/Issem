@@ -1,7 +1,7 @@
 -- Active: 1666090502503@@127.0.0.1@3306@tp10
 use tp10;
 
-CREATE TABLE `service `(
+CREATE OR REPLACE TABLE `service `(
     code_service INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nom_service VARCHAR(255),
     chef_service VARCHAR(255),
