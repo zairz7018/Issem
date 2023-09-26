@@ -29,3 +29,6 @@ INSERT INTO un_film (id , titre , description , annee , genre ) VALUES (
     "un film d'action américain réalisé par Sam Hargrave et sorti en 2020 sur Netflix. Il s’agit de l’adaptation du comic book intitulé Ciudad d’Ande Parks, Joe Russo, Anthony Russo, Fernando Leon Gonzalez et Eric Skillman1 " , 
     "2020-01-01", "Action"
 );
+
+INSERT INTO artiste (id , nom , prenom , date_naissance , email , telephone , adresse , cin , genre )
+VALUES (1 , "Rake" , "Tayler" , "04/04/1997" , "tayler_W9@mail.com" , "076854309" , "el kodia, el Jadida" , "EE34241" , "Action" )
