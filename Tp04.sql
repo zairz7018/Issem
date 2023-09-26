@@ -32,3 +32,16 @@ INSERT INTO un_film (id , titre , description , annee , genre ) VALUES (
 
 INSERT INTO artiste (id , nom , prenom , date_naissance , email , telephone , adresse , cin , genre )
 VALUES (1 , "Rake" , "Tayler" , "04/04/1997" , "tayler_W9@mail.com" , "076854309" , "el kodia, el Jadida" , "EE34241" , "Action" )
+
+INSERT INTO un_film (titre, description, annee, genre)
+VALUES
+    ('Film 1', 'Description du Film 1', '2022-01-15', 'Action'),
+    ('Film 2', 'Description du Film 2', '2019-08-20', 'Comédie'),
+    ('Film 3', 'Description du Film 3', '2020-05-10', 'Drame');
+
+
+INSERT INTO Artiste (nom, prenom, date_naissance, email, telephone, adresse, cin, genre)
+VALUES
+    ('Doe', 'John', '1990-03-25', 'john.doe@email.com', '1234567890', '123 Rue de la Rue', 'AB123456', 'Masculin'),
+    ('Smith', 'Alice', '1985-07-12', 'alice.smith@email.com', '9876543210', '456 Avenue de l\'Avenue', 'CD789012', 'Féminin'),
+    ('Johnson', 'Robert', '1978-12-05', 'robert.johnson@email.com', '5555555555', '789 Boulevard du Boulevard', 'EF345678', 'Masculin');
