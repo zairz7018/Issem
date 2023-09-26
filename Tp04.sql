@@ -23,3 +23,9 @@ CREATE OR REPLACE TABLE `Artiste` (
     genre VARCHAR(25) NOT NULL
     
 )
+
+INSERT INTO un_film (id , titre , description , annee , genre ) VALUES (
+    01 , "Extraction" , 
+    "un film d'action américain réalisé par Sam Hargrave et sorti en 2020 sur Netflix. Il s’agit de l’adaptation du comic book intitulé Ciudad d’Ande Parks, Joe Russo, Anthony Russo, Fernando Leon Gonzalez et Eric Skillman1 " , 
+    "2020-01-01", "Action"
+);
