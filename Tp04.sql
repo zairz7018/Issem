@@ -24,8 +24,18 @@ CREATE OR REPLACE TABLE `Artiste` (
     
 )
 
+CREATE TABLE Role (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    titre_film VARCHAR(25) NOT NULL,
+    id_artiste INT NOT NULL,
+    nom_role VARCHAR(25) NOT NULL,
+    FOREIGN KEY (titre_film) REFERENCES un_film(titre),
+    FOREIGN KEY (id_artiste) REFERENCES Artiste(id)
+);
+
+
 INSERT INTO un_film (id , titre , description , annee , genre ) VALUES (
-    01 , "Extraction" , 
+     "Extraction" , 
     "un film d'action américain réalisé par Sam Hargrave et sorti en 2020 sur Netflix. Il s’agit de l’adaptation du comic book intitulé Ciudad d’Ande Parks, Joe Russo, Anthony Russo, Fernando Leon Gonzalez et Eric Skillman1 " , 
     "2020-01-01", "Action"
 );
@@ -45,3 +55,4 @@ VALUES
     ('Doe', 'John', '1990-03-25', 'john.doe@email.com', '1234567890', '123 Rue de la Rue', 'AB123456', 'Masculin'),
     ('Smith', 'Alice', '1985-07-12', 'alice.smith@email.com', '9876543210', '456 Avenue de l\'Avenue', 'CD789012', 'Féminin'),
     ('Johnson', 'Robert', '1978-12-05', 'robert.johnson@email.com', '5555555555', '789 Boulevard du Boulevard', 'EF345678', 'Masculin');
+
