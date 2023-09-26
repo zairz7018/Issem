@@ -10,3 +10,16 @@ CREATE Table `un_film` (
     annee DATE ,
     genre VARCHAR(25) NOT NULL 
 );
+
+CREATE OR REPLACE TABLE `Artiste` (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nom VARCHAR(25) NOT NULL,   
+    prenom VARCHAR(25) NOT NULL,
+    date_naissance DATE NOT NULL,   
+    email VARCHAR(25) NOT NULL,
+    telephone VARCHAR(25) NOT NULL,
+    adresse VARCHAR(25) NOT NULL,
+    cin VARCHAR(25) NOT NULL,
+    genre VARCHAR(25) NOT NULL
+    
+)
